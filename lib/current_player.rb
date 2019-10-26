@@ -3,22 +3,11 @@ def turn_count(board)
 end
 
 def current_player(board)
-  
-  arr = board
 
-  board.map.with_index { |val, i|
-    i.even? ? "X" : "O"
-  }.select.with_index { |val, i|
-    break (i.even?) ? "X" : "O"
-  }
-  
+  board.each { |val| 
+    
+
 end
-
-
-def even_or_odd?(num)
-  return (num.even?) ? "X" : "O"
-end
-
 
 board1 = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
 board2 = ["O", " ", " ", " ", "X", " ", " ", "O", "X"]
