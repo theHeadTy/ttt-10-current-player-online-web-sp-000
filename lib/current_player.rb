@@ -4,7 +4,12 @@ end
 
 def current_player(board)
 
+  i = 0
   board.each { |val| 
+    i += 1 if val == "X" or val == "O"
+  }
+  
+  return (i.even?) ? "X" : "O"
     
 
 end
